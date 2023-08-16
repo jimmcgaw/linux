@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  debian:
+    build: ./debian
+    volumes:
+      - ./debian/mnt/share:/share
+  kali:
+    build: ./kali
+    volumes:
+      - ./kali/mnt/share:/share
+  mint:
+    build: ./mint
+    volumes:
+      - ./mint/mnt/share:/share
+  ubuntu:
+    build: ./ubuntu
+    volumes:
+      - ./ubuntu/mnt/share:/share
