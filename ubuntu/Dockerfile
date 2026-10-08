@@ -19,5 +19,5 @@ RUN echo "alias python='python3'" >> /root/.bashrc
 # Set working directory to /root
 WORKDIR /root
 
-# Open shell
-CMD ["/bin/bash"]
+# Keep the container alive by running a non-terminating foreground process
+CMD ["sleep", "infinity"]
